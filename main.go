@@ -3,6 +3,8 @@ package main
 import (
 	"net/http"
 
+	"project/resources"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -19,11 +21,12 @@ func handleRequest(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
+
 	output := request(RequestData)
 	c.JSON(http.StatusOK, output.Data)
 }
 
-func request(requestData resources.RequestData) resources.ResponseData{
+func request(requestData resources.RequestData) resources.ResponseData {
 	ch := make(chan RequestData)
 
 	ch <- requestData

@@ -1,4 +1,4 @@
-package main
+package resources
 
 type RequestData struct {
 	Ev     string `json:"ev"`
@@ -11,13 +11,13 @@ type RequestData struct {
 	L      string `json:"l"`
 	SC     string `json:"sc"`
 	Atrk1  string `json:"atrk1"`
-	Atrk1  string `json:"atrk1"`
-	Atrt1  string `json:"atrt1"`
+	Atrv1  string `json:"atrv1"`
+	Atrt1  string `json:"atrv1"`
 	Atrk2  string `json:"atrk2"`
 	Atrv2  string `json:"atrv2"`
 	Atrt2  string `json:"atrt2"`
 	UAtrk1 string `json:"uatrk1"`
-	UAtrk1 string `json:"uatrk1"`
+	UAtrv1 string `json:"uatrv1"`
 	UAtrt1 string `json:"uatrt1"`
 	UAtrk2 string `json:"uatrk2"`
 	UAtrv2 string `json:"uatrv2"`
